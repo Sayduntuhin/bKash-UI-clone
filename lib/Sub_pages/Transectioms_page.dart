@@ -26,7 +26,7 @@ class Transectionstab extends StatelessWidget{
                     context: context,
                     backgroundColor: Colors.white,
                     shape:
-                    RoundedRectangleBorder(borderRadius: BorderRadius.only(topLeft: Radius.circular(10),topRight: Radius.circular(10))),
+                    const RoundedRectangleBorder(borderRadius: BorderRadius.only(topLeft: Radius.circular(10),topRight: Radius.circular(10))),
                     builder: (context) {
                       return SizedBox(
                           height: screehight * .4,

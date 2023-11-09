@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MenuforOffer extends StatelessWidget {
@@ -7,8 +6,8 @@ class MenuforOffer extends StatelessWidget {
   final String? titlesmall;
 
 
-  MenuforOffer(
-      {required this.image,
+  const MenuforOffer(
+      {super.key, required this.image,
       required this.titlelarge,
       required this.titlesmall});
 
@@ -25,7 +24,7 @@ class MenuforOffer extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(right: 8,left: 8,top: 8,bottom: 4),
           child: Text(titlelarge!,
-              style: TextStyle(
+              style: const TextStyle(
 
                   color: Colors.black87,
                   fontWeight: FontWeight.w500,
@@ -35,7 +34,7 @@ class MenuforOffer extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 8,right: 8,bottom: 8),
           child: Text(titlesmall!,
-              style: TextStyle(
+              style: const TextStyle(
                   fontFamily: 'fonts1',
                   color: Colors.black54,
                   fontWeight: FontWeight.w600,

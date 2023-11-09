@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MenuforOffer2 extends StatelessWidget {
@@ -7,8 +6,8 @@ class MenuforOffer2 extends StatelessWidget {
 
 
 
-  MenuforOffer2(
-      {required this.image,
+  const MenuforOffer2(
+      {super.key, required this.image,
         required this.titlelarge,
         });
 

@@ -24,7 +24,6 @@ class NotificationsList extends StatelessWidget{
   Widget build(BuildContext context) {
     MediaQueryData mediaQuery = MediaQuery.of(context);
     double screenwight = mediaQuery.size.width;
-    double screehight = mediaQuery.size.height;
     return  Padding(
       padding: const EdgeInsets.only(left: 15,right: 15),
       child: Container(

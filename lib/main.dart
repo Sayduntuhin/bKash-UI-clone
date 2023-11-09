@@ -26,11 +26,11 @@ class MyApp extends StatelessWidget {
 
       ),
       home: AnimatedSplashScreen(
-        splash: Image(image: AssetImage('assets/images/bkashlogogif.gif')),
+        splash: const Image(image: AssetImage('assets/images/bkashlogogif.gif')),
          splashIconSize: 250,
           duration: 2000,
-          backgroundColor: Color(0xFFe3146c),
-          nextScreen: NavigationPage(),
+          backgroundColor: const Color(0xFFe3146c),
+          nextScreen: const NavigationPage(),
       )
     );
   }

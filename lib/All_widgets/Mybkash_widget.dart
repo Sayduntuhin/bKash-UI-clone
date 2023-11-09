@@ -12,7 +12,6 @@ class _MybkashState extends State<Mybkash> {
   @override
   Widget build(BuildContext context) {
     MediaQueryData mediaQuery = MediaQuery.of(context);
-    double screenwight = mediaQuery.size.width;
     double screehight = mediaQuery.size.height;
     return Padding(
       padding: const EdgeInsets.only(left: 10, right: 10),

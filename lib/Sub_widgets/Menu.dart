@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Menu extends StatelessWidget{
@@ -25,7 +24,7 @@ class Menu extends StatelessWidget{
 
             ),
 
-            Text(title!,style: TextStyle(fontFamily: 'fonts1',color: Colors.black,fontWeight: FontWeight.w600,fontSize: 11))
+            Text(title!,style: const TextStyle(fontFamily: 'fonts1',color: Colors.black,fontWeight: FontWeight.w600,fontSize: 11))
 
 
 

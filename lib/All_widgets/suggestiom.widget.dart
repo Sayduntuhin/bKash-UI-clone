@@ -12,7 +12,6 @@ class _SuggestionsWidgetState extends State<SuggestionsWidget> {
   @override
   Widget build(BuildContext context) {
     MediaQueryData mediaQuery = MediaQuery.of(context);
-    double screenwight = mediaQuery.size.width;
     double screehight = mediaQuery.size.height;
     return Padding(
       padding: const EdgeInsets.only(left: 10,right: 10),
@@ -103,7 +102,7 @@ class _SuggestionsWidgetState extends State<SuggestionsWidget> {
                                     ),
                                   ),
 
-                                  Expanded(
+                                  const Expanded(
                                     child: SingleChildScrollView(
                                       scrollDirection: Axis.vertical,
                                       child: Column(

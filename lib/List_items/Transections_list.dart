@@ -87,9 +87,9 @@ class _TransectionsMenuState extends State<TransectionsMenu> {
                               ),
                               Row(
                                 children: [
-                                  Text(
+                                  const Text(
                                    'Trans ID :',
-                                    style: const TextStyle(color: Colors.black54),
+                                    style: TextStyle(color: Colors.black54),
                                   ),
                                   Text(
                                     widget.trans_id!,

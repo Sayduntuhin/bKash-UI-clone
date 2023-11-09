@@ -1,10 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../demo_data.dart';
 import '../List_items/notifications_list.dart';
 
 class Notificationstab extends StatelessWidget{
+  const Notificationstab({super.key});
+
   @override
   Widget build(BuildContext context)
   {

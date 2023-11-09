@@ -13,7 +13,6 @@ class _OfferdetailsPageState extends State<OfferdetailsPage> {
   Widget build(BuildContext context) {
     MediaQueryData mediaQuery = MediaQuery.of(context);
     double screenwight = mediaQuery.size.width;
-    double screehight = mediaQuery.size.height;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xFFe3146c),

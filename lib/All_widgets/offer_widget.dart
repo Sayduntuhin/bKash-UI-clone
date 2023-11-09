@@ -48,7 +48,7 @@ class _OfferWidgetState extends State<OfferWidget> {
                       onPressed: () {
 
                         setState(() {
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=> OfferdetailsPage()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=> const OfferdetailsPage()));
 
                         });
 
@@ -184,7 +184,7 @@ class _OfferWidgetState extends State<OfferWidget> {
                        child: GestureDetector(
                          onTap: (){
                            setState(() {
-                             Navigator.push(context, MaterialPageRoute(builder: (context)=> OfferdetailsPage()));
+                             Navigator.push(context, MaterialPageRoute(builder: (context)=> const OfferdetailsPage()));
                            });
 
                          },
