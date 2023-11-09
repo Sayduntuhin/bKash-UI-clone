@@ -13,7 +13,7 @@ class Splashpage extends StatelessWidget{
       body: Container(
         color: Color(0xFFe3146c),
 
-        child: Center(child: AnimatedContainer(duration: Duration(),child: Image(image:  AssetImage('assets/images/bKash.png'),color:Colors.white ,width: screenwight * .2,height: screehight * 0.2,)),),
+        child: Center(child: AnimatedContainer(duration: Duration(),child: Image(image:  AssetImage('assets/images/bKash.png'),color:Colors.white ,width: screenwight * .1,height: screehight * 0.1,)),),
       ),
 
     );
