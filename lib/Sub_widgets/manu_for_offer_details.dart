@@ -22,7 +22,7 @@ class MenuforOfferDetails extends StatelessWidget {
           padding: const EdgeInsets.all(1),
           child: Image(
             image: AssetImage(image!),
-            width: 170,
+            width: 160,
             height: 100,
             fit: BoxFit.cover,
 

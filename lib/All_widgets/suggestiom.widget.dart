@@ -11,6 +11,9 @@ class SuggestionsWidget extends StatefulWidget{
 class _SuggestionsWidgetState extends State<SuggestionsWidget> {
   @override
   Widget build(BuildContext context) {
+    MediaQueryData mediaQuery = MediaQuery.of(context);
+    double screenwight = mediaQuery.size.width;
+    double screehight = mediaQuery.size.height;
     return Padding(
       padding: const EdgeInsets.only(left: 10,right: 10),
       child: Column(
@@ -45,12 +48,14 @@ class _SuggestionsWidgetState extends State<SuggestionsWidget> {
                       showModalBottomSheet(
                           context: context,
                           backgroundColor: Colors.white,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15),
+                          shape: const RoundedRectangleBorder(
+                              borderRadius: BorderRadius.only(
+                                  topRight: Radius.circular(5),
+                                  topLeft: Radius.circular(5))
                           ),
                           builder: (context) {
                             return SizedBox(
-                              height: 600,
+                              height: screehight * .6,
                               child: Column(
                                 children: [
                                   Container(
@@ -98,8 +103,7 @@ class _SuggestionsWidgetState extends State<SuggestionsWidget> {
                                     ),
                                   ),
 
-                                  const SizedBox(
-                                    height: 480,
+                                  Expanded(
                                     child: SingleChildScrollView(
                                       scrollDirection: Axis.vertical,
                                       child: Column(

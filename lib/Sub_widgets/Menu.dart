@@ -21,6 +21,7 @@ class Menu extends StatelessWidget{
             Image(image: AssetImage(image!),
 
               height: 50,
+              width: 60,
 
             ),
 

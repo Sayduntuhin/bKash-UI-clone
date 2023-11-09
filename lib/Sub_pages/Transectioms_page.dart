@@ -11,6 +11,8 @@ class Transectionstab extends StatelessWidget{
   @override
   Widget build(BuildContext context)
   {
+    MediaQueryData mediaQuery = MediaQuery.of(context);
+    double screehight = mediaQuery.size.height;
     return Scaffold(
       body: SafeArea(
         child: Expanded(
@@ -24,10 +26,10 @@ class Transectionstab extends StatelessWidget{
                     context: context,
                     backgroundColor: Colors.white,
                     shape:
-                    RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                    RoundedRectangleBorder(borderRadius: BorderRadius.only(topLeft: Radius.circular(10),topRight: Radius.circular(10))),
                     builder: (context) {
                       return SizedBox(
-                          height: 370,
+                          height: screehight * .4,
                           child: TransectionsListDetails(data: datas,)
                       );
                     });

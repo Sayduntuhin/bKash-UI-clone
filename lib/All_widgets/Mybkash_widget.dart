@@ -11,6 +11,9 @@ class Mybkash extends StatefulWidget {
 class _MybkashState extends State<Mybkash> {
   @override
   Widget build(BuildContext context) {
+    MediaQueryData mediaQuery = MediaQuery.of(context);
+    double screenwight = mediaQuery.size.width;
+    double screehight = mediaQuery.size.height;
     return Padding(
       padding: const EdgeInsets.only(left: 10, right: 10),
       child: Column(
@@ -25,7 +28,8 @@ class _MybkashState extends State<Mybkash> {
                 ),
                 borderRadius: const BorderRadius.only(
                     topRight: Radius.circular(5),
-                    topLeft: Radius.circular(5))),
+                    topLeft: Radius.circular(5))
+            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -46,11 +50,12 @@ class _MybkashState extends State<Mybkash> {
                           context: context,
                           backgroundColor: Colors.white,
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.only(topRight: Radius.circular(15),topLeft: Radius.circular(15) ),
+
                           ),
                           builder: (context) {
                             return SizedBox(
-                              height: 600,
+                              height: screehight * .6,
                               child: Column(
                                 children: [
                                   Container(
@@ -130,7 +135,7 @@ class _MybkashState extends State<Mybkash> {
                                       SizedBox(height: 20,),
 
                                       Padding(
-                                        padding: EdgeInsets.only(top: 30,left: 30,right: 30,bottom: 30),
+                                        padding: EdgeInsets.only(top: 30,left: 30,right: 30,),
                                         child: Row(
                                           children: [
                                             SizedBox(width: 2,),

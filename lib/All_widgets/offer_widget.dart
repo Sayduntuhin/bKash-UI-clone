@@ -80,7 +80,6 @@ class _OfferWidgetState extends State<OfferWidget> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-
                    Padding(
                      padding: const EdgeInsets.only(right: 5,bottom: 10,top: 10,left: 10),
                      child: Container(

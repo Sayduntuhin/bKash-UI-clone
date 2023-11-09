@@ -57,7 +57,7 @@ class _BalancebuttonState extends State<Balancebutton> {
                 opacity: isbalanceshow ? 1 : 0,
                 duration: const Duration(milliseconds: 500),
                 child: const Text(
-                  '৳ 15000.00',
+                  '৳ 150000.00',
                   style: TextStyle(
                       color: Colors.pink, fontSize: 14,fontWeight: FontWeight.w500),
                 ),

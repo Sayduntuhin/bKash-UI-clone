@@ -22,6 +22,9 @@ class NotificationsList extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
+    MediaQueryData mediaQuery = MediaQuery.of(context);
+    double screenwight = mediaQuery.size.width;
+    double screehight = mediaQuery.size.height;
     return  Padding(
       padding: const EdgeInsets.only(left: 15,right: 15),
       child: Container(
@@ -56,40 +59,46 @@ class NotificationsList extends StatelessWidget{
                     Image(image : AssetImage(image)),
                     Row(
                       crossAxisAlignment:CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.all(8),
+                          padding: const EdgeInsets.only(top: 8,bottom: 8,),
                           child: Center(child: Image(image: const AssetImage('assets/images/logo.png'),width: 50,height: 50,color: Colors.pink.shade400,)),
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.only(top: 10,right: 8,bottom: 5),
+                                  padding: const EdgeInsets.only(top: 10,bottom: 5),
                                   child: SizedBox(
-
-
                                       height: 15,
-                                      width: 210,
+                                      width: screenwight * .4,
                                       child: Text(title,style: const TextStyle(fontSize: 14 ),)),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(top: 10,left: 3,bottom: 5),
-                                  child:   Text(
-                                    '$time $date',
-                                    style: const TextStyle(color: Colors.black26,
-                                      fontSize: 12,
-                                    ),)
+                                  padding: const EdgeInsets.only(top: 10,bottom: 5),
+                                  child:   SizedBox(
+                                    height: 15,
+                                    width: screenwight * .3,
+                                    child: Center(
+                                      child: Text(
+                                        '$time $date',
+                                        style: const TextStyle(color: Colors.black26,
+                                          fontSize: 12,
+                                        ),),
+                                    ),
+                                  )
                                 ),
                               ],
                             ),
                             Padding(
                               padding: const EdgeInsets.only(top: 5,right: 8,bottom: 10),
                               child: SizedBox(
-
-                                  width: 300,
+                                  width: screenwight * .7,
                                   child: Text(sub_title,style: const TextStyle(fontSize: 14),)),
                             )
                           ],

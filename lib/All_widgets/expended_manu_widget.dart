@@ -62,19 +62,15 @@ class _ExpendedMenuState extends State<ExpendedMenu> {
                     height: 20,
                   ),
                   Row(
-                    //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      SizedBox(width: 30,),
                       Menu(image: 'assets/images/b2b.png', title: 'bKash to Bank'),
-                      SizedBox(width: 30,),
                       Menu(
                           image: 'assets/images/remitence.png',
                           title: 'Remittance'),
-                      SizedBox(width: 35,),
                       Menu(
                           image: 'assets/images/educationfee.png',
                           title: 'Education  Fee'),
-                      SizedBox(width: 26,),
                       Menu(image: 'assets/images/mfin.png', title: 'Microfinance'),
                     ],
                   )
@@ -194,19 +190,18 @@ class _ExpendedMenuState extends State<ExpendedMenu> {
                 height: 20,
               ),
               const Row(
-                //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  SizedBox(width: 30,),
+
                   Menu(image: 'assets/images/b2b.png', title: 'bKash to Bank'),
-                  SizedBox(width: 30,),
+
                   Menu(
                       image: 'assets/images/remitence.png',
                       title: 'Remittance'),
-                  SizedBox(width: 35,),
+
                   Menu(
                       image: 'assets/images/educationfee.png',
                       title: 'Education  Fee'),
-                  SizedBox(width: 26,),
                   Menu(image: 'assets/images/mfin.png', title: 'Microfinance'),
                 ],
               ),
